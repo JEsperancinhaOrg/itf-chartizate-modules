@@ -4,7 +4,7 @@
     <groupId>org.jesperancinha.itf</groupId>
     <artifactId>itf-chartizate-modules</artifactId>
     <name>Chartizate modules parent POM</name>
-    <version>5.0.0-SNAPSHOT</version>
+    <version>5.0.0</version>
     <description>Parent pom of the chartizate libraries.</description>
     <url>https://github.com/jesperancinha/itf-chartizate-modules</url>
     <licenses>
@@ -22,10 +22,10 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:https://github.com/jesperancinha/itf-chartizate.git</connection>
-        <developerConnection>scm:git:https://github.com/jesperancinha/itf-chartizate.git</developerConnection>
+        <connection>scm:git:https://github.com/jesperancinha/itf-chartizate-modules.git</connection>
+        <developerConnection>scm:git:https://github.com/jesperancinha/itf-chartizate-modules.git</developerConnection>
         <url>https://github.com/jesperancinha/itf-chartizate-modules</url>
-        <tag>5.0.0-SNAPSHOT</tag>
+        <tag>5.0.0</tag>
     </scm>
     <distributionManagement>
         <snapshotRepository>
@@ -38,7 +38,7 @@
         </repository>
     </distributionManagement>
     <properties>
-        <revision>5.0.0-SNAPSHOT</revision>
+        <revision>5.0.0</revision>
         <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
         <maven-compiler-plugin.source>11</maven-compiler-plugin.source>
         <maven-compiler-plugin.target>11</maven-compiler-plugin.target>
@@ -63,7 +63,7 @@
         <lombok-maven-plugin.version>1.18.6.0</lombok-maven-plugin.version>
         <mockito-core.version>2.21.0</mockito-core.version>
         <mockito-junit-jupiter.version>2.17.0</mockito-junit-jupiter.version>
-        <itf-chartizate.version>5.0.0-SNAPSHOT</itf-chartizate.version>
+        <itf-chartizate.version>5.0.0</itf-chartizate.version>
     </properties>
     <packaging>pom</packaging>
     <profiles>
