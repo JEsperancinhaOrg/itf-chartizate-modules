@@ -12,7 +12,7 @@ This is the implementation of the algorithm using java.awt
 <dependency>
   <groupId>org.jesperancinha.itf</groupId>
   <artifactId>itf-chartizate-java</artifactId>
-  <version>4.1.2</version>
+  <version>5.0.0</version>
 </dependency>
 ```
 
