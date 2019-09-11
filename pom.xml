@@ -63,6 +63,7 @@
         <lombok-maven-plugin.version>1.18.6.0</lombok-maven-plugin.version>
         <mockito-core.version>2.21.0</mockito-core.version>
         <mockito-junit-jupiter.version>2.17.0</mockito-junit-jupiter.version>
+        <itf-chartizate.version>5.0.0-SNAPSHOT</itf-chartizate.version>
     </properties>
     <packaging>pom</packaging>
     <profiles>
@@ -165,12 +166,7 @@
             <dependency>
                 <groupId>org.jesperancinha.itf</groupId>
                 <artifactId>itf-chartizate-api</artifactId>
-                <version>${revision}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.jesperancinha.itf</groupId>
-                <artifactId>itf-chartizate-common</artifactId>
-                <version>${revision}</version>
+                <version>${itf-chartizate.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.fusesource.jansi</groupId>

@@ -2,6 +2,7 @@ package org.jesperancinha.chartizate;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jesperancinha.chartizate.objects.ChartizateCharacterImg;
+import org.jesperancinha.chartizate.objects.ColorHelper;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -67,8 +68,11 @@ public class ChartizateImageManagerImpl extends ChartizateImageManagerAbstract<C
     }
 
     @Override
-    public Color createColor(int mediumApha, int mediumRed, int mediumGreen, int mediumBlue) {
-        return new Color(mediumRed, mediumGreen, mediumBlue, mediumApha);
+    public Color createColor(ColorHelper colorHelper) {
+        return new Color(colorHelper.getRed(),
+                colorHelper.getGreen(),
+                colorHelper.getBlue(),
+                colorHelper.getAlpha());
     }
 
     @Override

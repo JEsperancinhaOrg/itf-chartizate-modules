@@ -6,7 +6,7 @@
     <name>Chartizate Java Implementation</name>
     <parent>
         <groupId>org.jesperancinha.itf</groupId>
-        <artifactId>itf-chartizate</artifactId>
+        <artifactId>itf-chartizate-modules</artifactId>
         <!--suppress MavenPropertyInParent -->
         <version>5.0.0-SNAPSHOT</version>
     </parent>
@@ -153,7 +153,7 @@
     <dependencies>
         <dependency>
             <groupId>org.jesperancinha.itf</groupId>
-            <artifactId>itf-chartizate-common</artifactId>
+            <artifactId>itf-chartizate-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.im4java</groupId>
