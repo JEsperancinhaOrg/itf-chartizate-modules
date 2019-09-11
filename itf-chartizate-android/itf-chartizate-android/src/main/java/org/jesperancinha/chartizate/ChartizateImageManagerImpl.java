@@ -96,24 +96,4 @@ public class ChartizateImageManagerImpl
             currentWidth += row[j].getWidth();
         }
     }
-
-    @Override
-    public int getBlue(int color) {
-        return Color.blue(color);
-    }
-
-    @Override
-    public int getGreen(int color) {
-        return Color.green(color);
-    }
-
-    @Override
-    public int getRed(int color) {
-        return Color.red(color);
-    }
-
-    @Override
-    public int getAlpha(int color) {
-        return Color.alpha(color);
-    }
 }

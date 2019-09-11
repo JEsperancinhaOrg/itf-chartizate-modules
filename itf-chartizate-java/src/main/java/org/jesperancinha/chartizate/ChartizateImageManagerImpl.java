@@ -75,24 +75,4 @@ public class ChartizateImageManagerImpl
                 colorHelper.getBlue(),
                 colorHelper.getAlpha());
     }
-
-    @Override
-    public int getBlue(int rgbPixel) {
-        return (rgbPixel) & 0xff;
-    }
-
-    @Override
-    public int getGreen(int rgbPixel) {
-        return (rgbPixel >> 8) & 0xff;
-    }
-
-    @Override
-    public int getRed(int rgbPixel) {
-        return (rgbPixel >> 16) & 0xff;
-    }
-
-    @Override
-    public int getAlpha(int rgbPixel) {
-        return (rgbPixel >> 24) & 0xff;
-    }
 }
