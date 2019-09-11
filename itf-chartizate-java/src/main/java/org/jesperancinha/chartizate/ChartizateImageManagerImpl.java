@@ -2,7 +2,6 @@ package org.jesperancinha.chartizate;
 
 import lombok.extern.slf4j.Slf4j;
 import org.jesperancinha.chartizate.objects.ChartizateCharacterImg;
-import org.jesperancinha.chartizate.objects.ColorHelper;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -16,23 +15,15 @@ public class ChartizateImageManagerImpl
         extends ChartizateImageManagerAbstract<Color, Font, BufferedImage> {
 
     private final String outputFile;
-    private BufferedImage srcImage;
 
     public ChartizateImageManagerImpl(InputStream io, String outputFile) throws IOException {
-        this.srcImage = ImageIO.read(io);
+        srcImage = ChartizateImageImpl.builder().srcImage(ImageIO.read(io)).build();
         this.outputFile = outputFile;
     }
 
-    public int getImageWidth() {
-        return this.srcImage.getWidth();
-    }
-
-    public int getImageHeight() {
-        return this.srcImage.getHeight();
-    }
-
+    @Override
     public BufferedImage generateBufferedImage(ChartizateCharacterImg<Color>[][] chartizateCharacterImage, ChartizateFontManager<Font> fontManager) {
-        final BufferedImage bImg = new BufferedImage(getImageWidth(), getImageHeight(), BufferedImage.TYPE_INT_RGB);
+        final BufferedImage bImg = new BufferedImage(srcImage.getImageWidth(), srcImage.getImageHeight(), BufferedImage.TYPE_INT_RGB);
         final Graphics2D g2d = bImg.createGraphics();
         final Font font = fontManager.getFont();
         g2d.setFont(font);
@@ -61,18 +52,5 @@ public class ChartizateImageManagerImpl
     public void saveBitmap(BufferedImage bufferedImage) throws IOException {
         ImageIO.write(bufferedImage, "png", new File(this.outputFile));
         log.trace("File {} {}", this.outputFile, " is saved");
-    }
-
-    @Override
-    public int getImagePixelRGB(int j, int k) {
-        return srcImage.getRGB(j, k);
-    }
-
-    @Override
-    public Color createColor(ColorHelper colorHelper) {
-        return new Color(colorHelper.getRed(),
-                colorHelper.getGreen(),
-                colorHelper.getBlue(),
-                colorHelper.getAlpha());
     }
 }
