@@ -9,14 +9,14 @@ import android.graphics.Typeface;
 import android.util.Log;
 
 import org.jesperancinha.chartizate.objects.ChartizateCharacterImg;
+import org.jesperancinha.chartizate.objects.ColorHelper;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 
 public class ChartizateImageManagerImpl
-        extends ChartizateImageManagerAbstract<Integer, Typeface, Bitmap>
-        implements ChartizateImageManager<Integer, Typeface, Bitmap> {
+        extends ChartizateImageManagerAbstract<Integer, Typeface, Bitmap> {
 
     private final Bitmap targetBitmap;
     private final Canvas canvas;
@@ -56,8 +56,8 @@ public class ChartizateImageManagerImpl
     }
 
     @Override
-    public Integer createColor(int alpha, int red, int green, int blue) {
-        return Color.argb(alpha, red, green, blue);
+    public Integer createColor(ColorHelper colorHelper) {
+        return Color.argb(colorHelper.getAlpha(), colorHelper.getRed(), colorHelper.getGreen(), colorHelper.getBlue());
     }
 
     @Override

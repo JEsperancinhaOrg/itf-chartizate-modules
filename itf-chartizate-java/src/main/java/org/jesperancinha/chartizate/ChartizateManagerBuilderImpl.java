@@ -17,6 +17,7 @@ public class ChartizateManagerBuilderImpl
     private String fontName;
     private ChartizateDistributionType distributionType;
     private String destinationImagePath;
+    private InputStream imageFullStream;
 
     @Override
     public ChartizateImageManagerImpl createImageManager(
@@ -78,7 +79,7 @@ public class ChartizateManagerBuilderImpl
 
     @Override
     public ChartizateManagerBuilder<Color, Font, BufferedImage> imageFullStream(InputStream imageFullStream) throws IOException {
-        this.withImageManager(imageFullStream);
+        this.imageFullStream = imageFullStream;
         return this;
     }
 
@@ -89,9 +90,10 @@ public class ChartizateManagerBuilderImpl
     }
 
     @Override
-    public ChartizateManager<Color, Font, BufferedImage> build() {
+    public ChartizateManager<Color, Font, BufferedImage> build() throws IOException {
         this.withDistribution(this.distributionType, this.densityPercentage, this.rangePercentage);
         this.withDestinationPath(destinationImagePath);
+        this.withImageManager(imageFullStream);
         this.withChartizateBoard();
         return ChartizateManagerImpl.<Color, Font, BufferedImage>builder()
                 .chartizateBoard(super.chartizateBoard)

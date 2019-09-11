@@ -14,6 +14,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.stream.IntStream;
 
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
@@ -61,7 +62,7 @@ public class ChartizateImageManagerImplTest {
 
         final ChartizateImageManager<Color, Font, BufferedImage> imageManager = new ChartizateImageManagerImpl(io, targetFile.getAbsolutePath());
 
-        final Color partAverageColor = imageManager.getPartAverageColor(0, 0, 10, 10);
+        final Color partAverageColor = imageManager.getPartAverageColor(IntStream.range(0, 10), IntStream.range(0, 10));
 
         assertThat(partAverageColor.getRed()).isEqualTo(0);
         assertThat(partAverageColor.getGreen()).isEqualTo(191);
@@ -75,7 +76,7 @@ public class ChartizateImageManagerImplTest {
 
         final ChartizateImageManager<Color, Font, BufferedImage> imageManager = new ChartizateImageManagerImpl(io, targetFile.getAbsolutePath());
 
-        final Color partAverageColor = imageManager.getPartAverageColor(10, 0, 19, 10);
+        final Color partAverageColor = imageManager.getPartAverageColor(IntStream.range(10, 19), IntStream.range(0, 10));
         assertThat(partAverageColor.getRed()).isEqualTo(0);
         assertThat(partAverageColor.getGreen()).isEqualTo(70);
         assertThat(partAverageColor.getBlue()).isEqualTo(70);

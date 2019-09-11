@@ -6,7 +6,9 @@ import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+
 import androidx.test.runner.AndroidJUnit4;
+
 import org.jesperancinha.chartizate.objects.ChartizateCharacterImg;
 import org.jesperancinha.chartizate.objects.ChartizateCharacterImgImpl;
 import org.junit.Before;
@@ -20,6 +22,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
@@ -44,7 +47,7 @@ public class ChartizateImageManagerImplTest {
         final ChartizateImageManager<Integer, Typeface, Bitmap> imageManager = new ChartizateImageManagerImpl(io, targetFile.getAbsolutePath());
 
         final Integer imageAverageInteger = imageManager.getImageAverageColor();
-        assertThat(imageAverageInteger).isEqualTo(-13788928);
+        assertThat(imageAverageInteger).isEqualTo(-416707840);
     }
 
     @Test
@@ -55,7 +58,7 @@ public class ChartizateImageManagerImplTest {
 
         final Integer imageAverageInteger = imageManager.getImageAverageColor();
 
-        assertThat(imageAverageInteger).isEqualTo(-16742778);
+        assertThat(imageAverageInteger).isEqualTo(-419399303);
     }
 
     @Test
@@ -64,9 +67,9 @@ public class ChartizateImageManagerImplTest {
 
         final ChartizateImageManager<Integer, Typeface, Bitmap> imageManager = new ChartizateImageManagerImpl(io, targetFile.getAbsolutePath());
 
-        final Integer partAverageInteger = imageManager.getPartAverageColor(0, 0, 10, 10);
+        final Integer partAverageInteger = imageManager.getPartAverageColor(IntStream.range(0, 10), IntStream.range(0, 10));
 
-        assertThat(partAverageInteger).isEqualTo(-16728129);
+        assertThat(partAverageInteger).isEqualTo(-771710045);
     }
 
     @Test
@@ -75,8 +78,9 @@ public class ChartizateImageManagerImplTest {
 
         final ChartizateImageManager<Integer, Typeface, Bitmap> imageManager = new ChartizateImageManagerImpl(io, targetFile.getAbsolutePath());
 
-        final Integer partAverageInteger = imageManager.getPartAverageColor(10, 0, 19, 10);
-        assertThat(partAverageInteger).isEqualTo(-16759226);
+        final Integer partAverageInteger = imageManager.getPartAverageColor(IntStream.range(10, 19), IntStream.range(0, 10));
+
+        assertThat(partAverageInteger).isEqualTo(-805290434);
     }
 
     @Test

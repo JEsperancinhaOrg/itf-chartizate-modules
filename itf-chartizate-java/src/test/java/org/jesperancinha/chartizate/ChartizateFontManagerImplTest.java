@@ -1,6 +1,5 @@
 package org.jesperancinha.chartizate;
 
-import org.jesperancinha.chartizate.distributions.ChartizateDistribution;
 import org.jesperancinha.chartizate.distributions.ChartizateDistributionType;
 import org.junit.Test;
 

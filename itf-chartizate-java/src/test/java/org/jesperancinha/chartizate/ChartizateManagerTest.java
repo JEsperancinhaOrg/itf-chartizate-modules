@@ -3,6 +3,7 @@ package org.jesperancinha.chartizate;
 import org.junit.Test;
 
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.InputStream;
 
 import static java.lang.Character.UnicodeBlock.ARABIC;
@@ -103,19 +104,20 @@ public class ChartizateManagerTest {
         final InputStream imageFullStream = getClass().getResourceAsStream("RealExample2.jpg");
         assertThat(imageFullStream).isNotNull();
 
-        final ChartizateManager manager = new ChartizateManagerBuilderImpl()
+        final ChartizateManager<Color, Font, BufferedImage> manager = new ChartizateManagerBuilderImpl()
                 .backgroundColor(Color.BLACK)
                 .densityPercentage(100)
                 .rangePercentage(100)
                 .distributionType(Linear)
                 .fontName("Times New Roman")
-                .fontSize(5)
+                .fontSize(50)
                 .block(ARABIC)
                 .imageFullStream(imageFullStream)
                 .destinationImagePath("/tmp/testRealExample2Arabic.png")
                 .build();
 
-        manager.generateConvertedImage();
+        final BufferedImage generateConvertedImage = manager.generateConvertedImage();
+        manager.saveImage(generateConvertedImage);
     }
 
     @Test
