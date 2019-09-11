@@ -3,13 +3,11 @@ package org.jesperancinha.chartizate;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
-import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.util.Log;
 
 import org.jesperancinha.chartizate.objects.ChartizateCharacterImg;
-import org.jesperancinha.chartizate.objects.ColorHelper;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -33,32 +31,14 @@ public class ChartizateImageManagerImpl
             bitmap = null;
             e.printStackTrace();
         }
+        srcImage = new ChartizateImageImpl(bitmap);
         this.outputFile = outputFile;
-        this.targetBitmap = Bitmap.createBitmap(getImageWidth(), getImageHeight()
+        this.targetBitmap = Bitmap.createBitmap(srcImage.getImageWidth(), srcImage.getImageHeight()
                 , Bitmap.Config.RGB_565);
         this.canvas = new Canvas(targetBitmap);
         this.paint = new Paint();
     }
 
-    @Override
-    public int getImageWidth() {
-        return bitmap.getWidth();
-    }
-
-    @Override
-    public int getImageHeight() {
-        return bitmap.getHeight();
-    }
-
-    @Override
-    public int getImagePixelRGB(int x, int y) {
-        return bitmap.getPixel(x, y);
-    }
-
-    @Override
-    public Integer createColor(ColorHelper colorHelper) {
-        return Color.argb(colorHelper.getAlpha(), colorHelper.getRed(), colorHelper.getGreen(), colorHelper.getBlue());
-    }
 
     @Override
     public Bitmap generateBufferedImage(
