@@ -24,6 +24,12 @@ implementation 'org.jesperancinha.itf:itf-chartizate-android:5.0.0'
 ## Buid
 
 ```text
+gradle wrapper
+
+./gradlew assembleRelease
+```
+
+```text
 gpg --keyring secring.gpg --export-secret-keys > ~/.gnupg/secring.gpg
 
 ./gradlew assemble -x signArchives
