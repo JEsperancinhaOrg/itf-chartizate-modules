@@ -21,10 +21,11 @@ Implementation modules for the itf-chartizate abstraction for different framewor
 This is an image to char coder, with a spin off to the current available ones
 ITF comes from image train filters and the idea is to use this library in many other projects. However the idea was to create a train of filters where each wagon would transform the image. It should work much like the chain of responsibility pattern.
 
-Example:  
-From: <img src="https://raw.githubusercontent.com/JEsperancinhaOrg/itf-chartizate-android/master/itf-chartizate-android/src/main/res/raw/realexample1.jpg" alt="" data-canonical-src="https://raw.githubusercontent.com/JEsperancinhaOrg/itf-chartizate-android/master/itf-chartizate-android/src/main/res/raw/realexample1.jpg" width="250" height="250" /> 
-To:
-<img src="https://raw.githubusercontent.com/JEsperancinhaOrg/itf-chartizate-android/master/itf-chartizate-android/src/main/res/raw/realexample1_expected.png" alt="" data-canonical-src="https://raw.githubusercontent.com/JEsperancinhaOrg/itf-chartizate-android/master/itf-chartizate-android/src/main/res/raw/realexample1_expected.png" width="250" height="250" />
+Example:
+
+[![alt text](documentation/testMarket.jpg "Bologna Market Original Image")](https://goo.gl/maps/ujJC9RPnpqA3QG3R9)
+[![alt text](documentation/testMarket1.png "Bologna Market Filter Image")](https://goo.gl/maps/ujJC9RPnpqA3QG3R9)
+[![alt text](documentation/testMarket2.png "Bologna Market Filter Rd Image")](https://goo.gl/maps/ujJC9RPnpqA3QG3R9)
 
 NOTE: Although [itf-chartizate-java](./itf-chartizate-java/README.md) is built with Java 11, modularization still hasn't been done because [itf-chartizate-api](./itf-chartizate-api/README.md) was built with Java 8. In turn this had to be done in order to support Android in [itf-chartizate-android](./itf-chartizate-android/README.md).
 ## Tools
