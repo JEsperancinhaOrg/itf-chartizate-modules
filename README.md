@@ -81,8 +81,6 @@ The following are libraries available in JFrog. I am not maintaining them anymor
 
 [![Download](https://api.bintray.com/packages/jesperancinha/maven/itf-chartizate-java/images/download.svg?version=1.1.4)](https://bintray.com/jesperancinha/maven/itf-chartizate-java/1.1.4/link) 
 [![Download](https://api.bintray.com/packages/jesperancinha/itf/itf-chartizate-api/images/download.svg)](https://bintray.com/jesperancinha/itf/itf-chartizate-api/_latestVersion)  
-
-
 ## chartizate-text-writer-android
 
 [![Download](https://api.bintray.com/packages/jesperancinha/maven/itf-chartizate-android/images/download.svg?version=1.1.4)](https://bintray.com/jesperancinha/maven/itf-chartizate-android/1.1.4/link)
