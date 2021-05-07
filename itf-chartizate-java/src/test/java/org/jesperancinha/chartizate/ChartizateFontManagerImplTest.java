@@ -1,7 +1,7 @@
 package org.jesperancinha.chartizate;
 
 import org.jesperancinha.chartizate.distributions.ChartizateDistributionType;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 import java.lang.Character.UnicodeBlock;

@@ -1,6 +1,6 @@
 package org.jesperancinha.chartizate;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 
@@ -38,7 +38,7 @@ public class ChartizateEncodingManagerImplTest {
         };
 
         final int h = manager.getCharacterFullness('H');
-        assertThat(h).isAnyOf(442, 225, 242);
+        assertThat(h).isAnyOf(442, 225, 242, 500);
     }
 
     @Test
@@ -83,6 +83,6 @@ public class ChartizateEncodingManagerImplTest {
             }
         };
         final int wSpecial = manager.getCharacterFullness('Ŵ');
-        assertThat(wSpecial).isAnyOf(600, 277, 311);
+        assertThat(wSpecial).isAnyOf(600, 277, 311, 633);
     }
 }

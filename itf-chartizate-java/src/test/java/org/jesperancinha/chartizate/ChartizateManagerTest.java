@@ -1,6 +1,6 @@
 package org.jesperancinha.chartizate;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -23,7 +23,7 @@ public class ChartizateManagerTest {
     public void testGenerateConvertedImageStreamCustomColor() throws Exception {
         final InputStream imageFullStream = getClass().getResourceAsStream("ChartizateCyanBlack.png");
         assertThat(imageFullStream).isNotNull();
-        final ChartizateManager manager = new ChartizateManagerBuilderImpl()
+        final ChartizateManager<Color, Font, BufferedImage> manager = new ChartizateManagerBuilderImpl()
                 .backgroundColor(new Color(15280682))
                 .densityPercentage(50)
                 .rangePercentage(10)
