@@ -8,7 +8,7 @@
         <groupId>org.jesperancinha.itf</groupId>
         <artifactId>itf-chartizate-modules</artifactId>
         <!--suppress MavenPropertyInParent -->
-        <version>5.0.1</version>
+        <version>5.0.1-SNAPSHOT</version>
     </parent>
     <description>Chatizate library to be used in Java Applications</description>
     <url>https://github.com/JEsperancinhaOrg/itf-chartizate/tree/master/itf-chartizate-java</url>
@@ -147,6 +147,37 @@
                 <configuration>
                     <useSystemClassLoader>false</useSystemClassLoader>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>${jacoco-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>${coveralls-maven-plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>javax.xml.bind</groupId>
+                        <artifactId>jaxb-api</artifactId>
+                        <version>${jaxb-api.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>

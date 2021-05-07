@@ -18,7 +18,7 @@ Example:
 <dependency>
   <groupId>org.jesperancinha.itf</groupId>
   <artifactId>itf-chartizate-java</artifactId>
-  <version>5.0.1</version>
+  <version>5.0.1-SNAPSHOT</version>
 </dependency>
 ```
 

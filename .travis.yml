@@ -1,7 +1,10 @@
-matrix:
-  include:
-    - language: java
-      jdk:
-        - openjdk11
-      script:
-        - mvn clean install
+os:
+  - linux
+  - osx
+stage: ITF - Chartizate for Java
+language: java
+jdk:
+  - openjdk11
+script:
+  - mvn clean install coveralls:report -Dconsolerizer.show=false -DrepoToken=${COVERALLS_TOKEN}
+  - bash <(curl -s https://codecov.io/bash)

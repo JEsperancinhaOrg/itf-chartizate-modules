@@ -13,8 +13,6 @@ public class ChartizateEncodingManagerImplTest {
      * perception of fullness. For example W you will find that is a less denser
      * character than others. However looking at it it does give the effect of
      * fullness
-     *
-     * @
      */
     @Test
     public void testInit_Latin_Visual_Density_Test() {
