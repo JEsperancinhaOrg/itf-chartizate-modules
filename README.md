@@ -6,7 +6,7 @@
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/a6846d4ad04548919d61b93a97acf27a)](https://www.codacy.com/manual/jofisaes/itf-chartizate-modules?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JEsperancinhaOrg/itf-chartizate-modules&amp;utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/JEsperancinhaOrg/itf-chartizate-modules.svg?style=svg)](https://circleci.com/gh/JEsperancinhaOrg/itf-chartizate-modules)
-[![Build Status](https://travis-ci.org/JEsperancinhaOrg/itf-chartizate-modules.svg?branch=master)](https://travis-ci.org/jesperancinha/itf-chartizate-modules)
+[![Build Status](https://travis-ci.com/JEsperancinhaOrg/itf-chartizate-modules.svg?branch=master)](https://travis-ci.com/jesperancinha/itf-chartizate-modules)
 [![codebeat badge](https://codebeat.co/badges/b35ccc5a-1324-4ad1-a89a-da4edb58b186)](https://codebeat.co/projects/github-com-jesperancinhaorg-itf-chartizate-modules-master)
 [![BCH compliance](https://bettercodehub.com/edge/badge/JEsperancinhaOrg/itf-chartizate-modules?branch=master)](https://bettercodehub.com/)
 [![codecov](https://codecov.io/gh/jesperancinhaorg/itf-chartizate-modules/branch/master/graph/badge.svg?token=B5py6s5p8j)](https://codecov.io/gh/jesperancinhaorg/itf-chartizate-modules)
@@ -29,7 +29,7 @@ Example:
 [![alt text](documentation/testMarket1.png "Bologna Market Filter Image")](https://goo.gl/maps/ujJC9RPnpqA3QG3R9)
 [![alt text](documentation/testMarket2.png "Bologna Market Filter Rd Image")](https://goo.gl/maps/ujJC9RPnpqA3QG3R9)
 
-NOTE: Although [itf-chartizate-java](./itf-chartizate-java/README.md) is built with Java 11, modularization still hasn't been done because [itf-chartizate-api](./itf-chartizate-api/README.md) was built with Java 8. In turn this had to be done in order to support Android in [itf-chartizate-android](./itf-chartizate-android/README.md).
+NOTE: Although [itf-chartizate-java](./itf-chartizate-java/README.md) is built with Java 11, modularization still hasn't been done because [itf-chartizate-api](./itf-chartizate-api/README.md) was built with Java 8.  In turn this had to be done in order to support Android in [itf-chartizate-android](./itf-chartizate-android/README.md).
 ## Tools
 
 $ git push --delete origin 2.0.0  
