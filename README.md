@@ -14,8 +14,9 @@
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/565498b6438e413898f194a52ac7ab66)](https://www.codacy.com/gh/JEsperancinhaOrg/itf-chartizate-modules/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JEsperancinhaOrg/itf-chartizate-modules&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/b35ccc5a-1324-4ad1-a89a-da4edb58b186)](https://codebeat.co/projects/github-com-jesperancinhaorg-itf-chartizate-modules-master)
-[![BCH compliance](https://bettercodehub.com/edge/badge/JEsperancinhaOrg/itf-chartizate-modules?branch=master)](https://bettercodehub.com/)
+[![BCH compliance](https://bettercodehub.com/edge/badge/JEsperancinhaOrg/itf-chartizate-modules?branch=master)](https://bettercodehub.com/results/JEsperancinhaOrg/itf-chartizate-modules)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/565498b6438e413898f194a52ac7ab66)](https://www.codacy.com/gh/JEsperancinhaOrg/itf-chartizate-modules/dashboard?utm_source=github.com&utm_medium=referral&utm_content=JEsperancinhaOrg/itf-chartizate-modules&utm_campaign=Badge_Coverage)
 [![codecov](https://codecov.io/gh/jesperancinhaorg/itf-chartizate-modules/branch/master/graph/badge.svg?token=B5py6s5p8j)](https://codecov.io/gh/jesperancinhaorg/itf-chartizate-modules)
 [![Coverage Status](https://coveralls.io/repos/github/JEsperancinhaOrg/itf-chartizate-modules/badge.svg?branch=master)](https://coveralls.io/github/JEsperancinhaOrg/itf-chartizate-modules?branch=master)
 
