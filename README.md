@@ -1,14 +1,21 @@
 # ITF Chartizate modules
 
+---
+
 [![Generic badge](https://img.shields.io/static/v1.svg?label=GitHub&message=ITF%20Chartizate%20Modules&color=informational)](https://github.com/jesperancinha/itf-chartizate-modules)
 [![Maven Central](https://img.shields.io/maven-central/v/org.jesperancinha.itf/itf-chartizate-modules)](https://search.maven.org/search?q=itf.itf-chartizate-modules)
 [![GitHub release](https://img.shields.io/github/release-pre/jesperancinha/itf-chartizate-modules.svg)](https://github.com/jesperancinha/itf-chartizate-modules/releases)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/JEsperancinhaOrg/itf-chartizate-modules)](https://github.com/JEsperancinhaOrg/itf-chartizate-modules/releases)
+[![javadoc](https://javadoc.io/badge2/org.jesperancinha.itf/itf-chartizate-modules/javadoc.svg)](https://javadoc.io/doc/org.jesperancinha.itf/itf-chartizate-modules)
+[![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/a6846d4ad04548919d61b93a97acf27a)](https://www.codacy.com/manual/jofisaes/itf-chartizate-modules?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JEsperancinhaOrg/itf-chartizate-modules&amp;utm_campaign=Badge_Grade)
 [![CircleCI](https://circleci.com/gh/JEsperancinhaOrg/itf-chartizate-modules.svg?style=svg)](https://circleci.com/gh/JEsperancinhaOrg/itf-chartizate-modules)
-[![Build Status](https://travis-ci.com/JEsperancinhaOrg/itf-chartizate-modules.svg?branch=master)](https://travis-ci.com/jesperancinha/itf-chartizate-modules)
+[![Build Status](https://travis-ci.com/JEsperancinhaOrg/itf-chartizate-modules.svg?branch=master)](https://travis-ci.com/JEsperancinhaOrg/itf-chartizate-modules)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/565498b6438e413898f194a52ac7ab66)](https://www.codacy.com/gh/JEsperancinhaOrg/itf-chartizate-modules/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JEsperancinhaOrg/itf-chartizate-modules&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/b35ccc5a-1324-4ad1-a89a-da4edb58b186)](https://codebeat.co/projects/github-com-jesperancinhaorg-itf-chartizate-modules-master)
 [![BCH compliance](https://bettercodehub.com/edge/badge/JEsperancinhaOrg/itf-chartizate-modules?branch=master)](https://bettercodehub.com/)
+
 [![codecov](https://codecov.io/gh/jesperancinhaorg/itf-chartizate-modules/branch/master/graph/badge.svg?token=B5py6s5p8j)](https://codecov.io/gh/jesperancinhaorg/itf-chartizate-modules)
 [![Coverage Status](https://coveralls.io/repos/github/JEsperancinhaOrg/itf-chartizate-modules/badge.svg?branch=master)](https://coveralls.io/github/JEsperancinhaOrg/itf-chartizate-modules?branch=master)
 
@@ -17,6 +24,18 @@
 [![GitHub top language](https://img.shields.io/github/languages/code-size/jesperancinha/itf-chartizate-modules.svg)](#)
 
 ---
+
+## Technologies used
+
+---
+
+[![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-50/java-50.png "Java")](https://www.oracle.com/nl/java/)
+[![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-50/lombok-50.png "Lombok")](https://projectlombok.org/)
+[![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-50/mockito-50.png "Mockito")](https://site.mockito.org/)
+[![alt text](https://raw.githubusercontent.com/jesperancinha/project-signer/master/project-signer-templates/icons-50/assertj-50.png "AssertJ")](https://assertj.github.io/doc/)
+
+---
+
 ## Description
 
 Implementation modules for the itf-chartizate abstraction for different frameworks
