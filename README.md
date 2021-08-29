@@ -73,6 +73,16 @@ mvn nexus-staging:release  -Prelease
 </dependency>
 ```
 
+---
+
+## Buy me a coffee
+
+I hope you enjoyed this repository. If you did please buy me a coffee which enables me to constantly improve and make new free content regularly for everyone. Thank you so much!
+
+<a href="https://www.buymeacoffee.com/jesperancinha"><img height="50px" src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=jesperancinha&button_colour=046c46&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00"></a>
+
+---
+
 ## References
 
 -   [Definitive Guide To Java 12](https://blog.codefx.org/java/java-12-guide/)
