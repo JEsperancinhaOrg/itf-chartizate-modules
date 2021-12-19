@@ -10,6 +10,7 @@
 [![GitHub License](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](https://www.apache.org/licenses/LICENSE-2.0)
 
 [![CircleCI](https://circleci.com/gh/JEsperancinhaOrg/itf-chartizate-modules.svg?style=svg)](https://circleci.com/gh/JEsperancinhaOrg/itf-chartizate-modules)
+[![itf-chartizate-modules](https://github.com/JEsperancinhaOrg/itf-chartizate-modules/actions/workflows/itf-chartizate-modules.yml/badge.svg)](https://github.com/JEsperancinhaOrg/itf-chartizate-modules/actions/workflows/itf-chartizate-modules.yml)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/565498b6438e413898f194a52ac7ab66)](https://www.codacy.com/gh/JEsperancinhaOrg/itf-chartizate-modules/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JEsperancinhaOrg/itf-chartizate-modules&amp;utm_campaign=Badge_Grade)
 [![codebeat badge](https://codebeat.co/badges/b35ccc5a-1324-4ad1-a89a-da4edb58b186)](https://codebeat.co/projects/github-com-jesperancinhaorg-itf-chartizate-modules-master)
